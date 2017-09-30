@@ -1,0 +1,18 @@
+para PUBLICAR el estandar firebase pide crear una carpeta "public" para colocar los archivos(html, js...)
+y crear un archivo "index.html"
+
+solo Javascript
+
+para instalar las librerias: para publicarlo y este disponible para todos los proyectos
+sudo npm i -g firebase-tools
+
+luego de la instalacion se ejecutan los comandos:
+firebase login
+firebase init  <- indica si es una aplicacion nueva (seleccionar con barra de espacio la opcion Hosting y NO es una single-page)
+firebase deploy <- se publica (al final muestra la ruta .com)
+
+la primera q se inicia sesion, hay q refrescar
+
+para cambiar el dominio: inventarios-99217.firebaseapp.com
+entrar al proyecto
+Hosting (debemos tener nuestro propio dominio)
