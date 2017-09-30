@@ -18,6 +18,8 @@ entrar al proyecto
 Hosting (debemos tener nuestro propio dominio)
 
 
+para angular necesitamos primero node
+
 descargar el cliente de angular:
 cli.angular.io
 
@@ -40,6 +42,8 @@ protactor.conf.js (tambien para pruebas)
 el index se encuentra en appInicio -> src
 el primera archivo typescript q se ejecuta es el "main.ts"
 
+main -> appModule -> appComponent
+
 en main.ts al final se indica que modulo se ejecuta: AppModule (ubicado dentro de la carpeta src/app)
 en angular no se pone extension (se sobreentiende q la extension es "ts")
 app.module ejecuta app.component
@@ -58,3 +62,6 @@ ng g c nombreComponente
 
 
 node_modules -> se encuentran todo lo instalado
+
+hay q agregar las libreris de formulario de angular: app.module:
+al usar ngModel -> FormsModule

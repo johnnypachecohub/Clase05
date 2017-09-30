@@ -9,7 +9,8 @@ export class FormularioComponent implements OnInit {
 
   habilitado:boolean = false
   habilitadoLogin:boolean = false
-  
+  titulo:string = ''
+
   constructor() { 
     setTimeout(() => {
       this.habilitado = true
