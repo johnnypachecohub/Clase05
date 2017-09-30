@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		div {
+			display: none
+		}
+	</style>
+</head>
+<body>
+	<div>
+		
+	</div>
+
+	<script>
+		const promesa01 = new Promise((resolve, reject) => {
+			const img = document.createElement('img')
+			img.src = 'https://previews.123rf.com/images/smileus/smileus1508/smileus150800011/44219555-Panorama-esc-nico-del-oto-o-con-el-sol-brillando-a-trav-s-del-follaje-de-oro-y-iluminando-el-paisaje-Foto-de-archivo.jpg'
+			img.onload = function() {
+				//se ejecuta si la imagen ha sido cargada
+				resolve()
+			}
+			document.querySelector('div').appendChild(img)
+		})
+
+		const promesa02 = new Promise((resolve, reject) => {
+			const img = document.createElement('img')
+			img.src = 'http://www.cruceroclick.com/admin/archivos/Image/PAISAJES/POLINESIA/Tranquil_Lagoon_Bora_Bora_Island_French_Polynesia.jpg'
+			img.onload = function() {
+				//se ejecuta si la imagen ha sido cargada
+				resolve()
+			}
+			document.querySelector('div').appendChild(img)
+		})
+
+		Promise.all([promesa01, promesa02])
+			.then(() => {
+				document.querySelector('div').style.display = 'block'
+			})
+	</script>
+</body>
+</html>
