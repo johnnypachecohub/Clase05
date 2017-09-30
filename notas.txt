@@ -16,3 +16,45 @@ la primera q se inicia sesion, hay q refrescar
 para cambiar el dominio: inventarios-99217.firebaseapp.com
 entrar al proyecto
 Hosting (debemos tener nuestro propio dominio)
+
+
+descargar el cliente de angular:
+cli.angular.io
+
+verificar si esta instalado angular
+ng -v
+
+para crear nuevas aplicaciones en angular (de preferencia appNombreProyecto)
+ng new appInicio
+
+si ya existe el proyecto ejecutar:
+ng serve
+
+distribucion de archivos de angular
+tsconfig.json  (archivo de configuracion maneja el typescript)
+package.json (contiene los scripts q se pueden usar y paquetes instalados)
+karma.conf.js (usado para pruebas unitarias)
+protactor.conf.js (tambien para pruebas)
+.angular-cli.json (archivo de configuracion del cliente, modulos principales, ubicacion de carpetas para produccion o desarrollo, archivo inicial con el q empezara angular)
+
+el index se encuentra en appInicio -> src
+el primera archivo typescript q se ejecuta es el "main.ts"
+
+en main.ts al final se indica que modulo se ejecuta: AppModule (ubicado dentro de la carpeta src/app)
+en angular no se pone extension (se sobreentiende q la extension es "ts")
+app.module ejecuta app.component
+
+para ejecutar la aplicacion
+hay que estar dentro de la carpeta appInicio
+luego ejecutar el comando: ng serve   (es el ambiente de pruebas)
+
+para no escribir los componentes a mano, se usa el generador:
+dentro de appInicio:
+forma larga:
+ng generate component nombreComponente
+
+forma corta:
+ng g c nombreComponente
+
+
+node_modules -> se encuentran todo lo instalado
