@@ -67,11 +67,35 @@ ng g c nombreComponente --spec false
 node_modules -> se encuentran todo lo instalado
 
 hay q agregar las libreris de formulario de angular: app.module:
-al usar ngModel -> FormsModule
+al usar ngModel -> FormsModule -> import { FormsModule } from '@angular/forms'
 
 si se desea bootstrap, una opcion es descargarlo via npm (--save para que se graben las referencias en el package json):
 npm install bootstrap@4.0.0-beta --save
 
 para bajar librerias en node (enviar correos, etc.):
 npmjs.com
+
+
+para la clase 06:
+empezamos con index.html
+app.component.html (se borra todo)
+listado.component.html
+(los controladores se dividen x modulos, solo en este caso lo ponemos en app component)
+app.component.ts
+app.component.html (colocando las entradas: lista, servidores es la propiedad creada en el app component)
+listado.component.ts (para indicar que existe la propiedad de entrada lista, ahora tambien es una propiedad de listado.component)
+   @Input se ejecuta despues del constructor
+  
+  directivas estructurales en Angular empiezan con "*"
+  luego de declarar el [item] , nos vamos a servidor.component.ts
+  el Input soporta alias "Input(alias)"
+
+en formulariocomponent.html
+
+  entre corchetes entradas y entre parentesis salidas (eventos de botones x ejemplo)
+  
+  hay que crer el metodo click en el compoentn formulario
+  
+  al agregar la clase "button" ya no hace el reload de la pagina (para que no llame al submit del form)
+variables de plantilla con # (hacen referencia a la etiqueta completa)
 
