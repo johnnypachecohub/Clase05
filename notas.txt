@@ -99,3 +99,16 @@ en formulariocomponent.html
   al agregar la clase "button" ya no hace el reload de la pagina (para que no llame al submit del form)
 variables de plantilla con # (hacen referencia a la etiqueta completa)
 
+creacion de Eventos:
+en listado.component.html (nuevoServer) -> el componente formulario necesita saber q se ha creado un evento (Output), el Emisor es el tipo de datos q se va a devolver, puede ser de cualquier clase
+
+eventoAgregarServidor.emit() --> es como un trigger
+
+angular augury (exension para debuggear) extension de chrome, en el Inspector del navegador se añade una pestaña "Augury"
+
+separando las clases:
+ng g class compartido/servidor
+
+primero se ejecuta el HTML y luego Angular, es x ello q se coloca entre corchetes
+
+ViewEncapsulation.Native  //similar a IFrame (trae sus propios estilos)   Por defecto esta con Emulated (la mas usada) y el None afecta a todas las hojas de estilo
