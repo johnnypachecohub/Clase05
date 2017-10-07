@@ -37,7 +37,7 @@ tsconfig.json  (archivo de configuracion maneja el typescript)
 package.json (contiene los scripts q se pueden usar y paquetes instalados)
 karma.conf.js (usado para pruebas unitarias)
 protactor.conf.js (tambien para pruebas)
-.angular-cli.json (archivo de configuracion del cliente, modulos principales, ubicacion de carpetas para produccion o desarrollo, archivo inicial con el q empezara angular)
+.angular-cli.json (archivo de configuracion del cliente, css, modulos principales, ubicacion de carpetas para produccion o desarrollo, archivo inicial con el q empezara angular)
 
 el index se encuentra en appInicio -> src
 el primera archivo typescript q se ejecuta es el "main.ts"
@@ -68,3 +68,10 @@ node_modules -> se encuentran todo lo instalado
 
 hay q agregar las libreris de formulario de angular: app.module:
 al usar ngModel -> FormsModule
+
+si se desea bootstrap, una opcion es descargarlo via npm (--save para que se graben las referencias en el package json):
+npm install bootstrap@4.0.0-beta --save
+
+para bajar librerias en node (enviar correos, etc.):
+npmjs.com
+
