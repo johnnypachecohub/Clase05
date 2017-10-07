@@ -60,6 +60,9 @@ ng generate component nombreComponente
 forma corta:
 ng g c nombreComponente
 
+para que no instale las prubeas unitarias
+ng g c nombreComponente --spec false
+
 
 node_modules -> se encuentran todo lo instalado
 
