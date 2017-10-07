@@ -112,3 +112,7 @@ ng g class compartido/servidor
 primero se ejecuta el HTML y luego Angular, es x ello q se coloca entre corchetes
 
 ViewEncapsulation.Native  //similar a IFrame (trae sus propios estilos)   Por defecto esta con Emulated (la mas usada) y el None afecta a todas las hojas de estilo
+
+los componentes no deberian ser los intermediaris, solo los servicios, solo en este caso lo estamos haciendo asi
+del padre al hijo una propiedad
+del hijo al padre un evento
