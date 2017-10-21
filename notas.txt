@@ -31,6 +31,7 @@ ng new appInicio
 
 si ya existe el proyecto ejecutar:
 ng serve
+ng server --o  (para que abra el navegador)
 
 distribucion de archivos de angular
 tsconfig.json  (archivo de configuracion maneja el typescript)
