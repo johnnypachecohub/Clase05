@@ -117,3 +117,7 @@ ViewEncapsulation.Native  //similar a IFrame (trae sus propios estilos)   Por de
 los componentes no deberian ser los intermediaris, solo los servicios, solo en este caso lo estamos haciendo asi
 del padre al hijo una propiedad
 del hijo al padre un evento
+
+------
+
+ng g m nombreModulo --routing true
